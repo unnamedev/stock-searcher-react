@@ -4,9 +4,10 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
 import {FaQuestion} from "react-icons/fa"
+import {AppProvider} from "./context/AppContext"
 
-const App = () => (
-    <>
+const App = () =>
+    <AppProvider>
         <Router>
             <Routes>
                 <Route path="/" exact element={<Home/>}/>
@@ -17,7 +18,6 @@ const App = () => (
                 <FaQuestion size={40} color={"#f6289a"}/>
             </Link>
         </Router>
-    </>
-)
+    </AppProvider>
 
 export default App

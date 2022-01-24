@@ -75,6 +75,20 @@ body,
                     180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 2;
   }
+
+  &-inner {
+    padding: 20px;
+    box-shadow: 0 0 4px 2px rgba(138, 138, 138, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      display: flex;
+      gap: 5px;
+      align-items: center;;
+    }
+  }
 }
 
 .form {
@@ -168,9 +182,17 @@ body,
   }
 }
 
+.inner {
+  padding-top: 40px;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+}
+
 .about__link {
   position: fixed;
   bottom: 20px;
   right: 20px;
-
 }

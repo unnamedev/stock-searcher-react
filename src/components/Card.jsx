@@ -30,6 +30,5 @@ const Card = ({data: {webformatURL, user, views, tags, likes, downloads}}) =>
         </motion.li>
     </AnimateSharedLayout>
 
-
 export default Card
 
